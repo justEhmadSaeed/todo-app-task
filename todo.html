@@ -12,30 +12,14 @@
 </head>
 
 <body>
-    <div class="todo-body">
+    <form onsubmit="addTodo()" id="todo-body">
         <h1 id="main-heading">Todofy</h1>
         <div id="input-block">
             <input type="text" name="todo-input" id="todo-input" placeholder="What will you do today?">
-            <button id="add-todo-btn">ADD</button>
+            <input type="submit" id="add-todo-btn" value="ADD">
         </div>
-        <div class="todos">
-            <div class="todo">
-                <input type="checkbox" name="todo">
-                <h4 class="todo-text">Lorem</h4>
-                <div class="delete-icon">
-                    <i class="fas fa-trash"></i>
-                </div>
-            </div>
-            <div class="todo">
-                <input type="checkbox" name="todo">
-                <h4 class="todo-text">Lorem</h4>
-                <div class="delete-icon">
-                    <i class="fas fa-trash"></i>
-                </div>
-            </div>
-
-        </div>
-    </div>
+        <div id="todos"> </div>
+    </form>
     <script src='todo.js'></script>
 
 </body>
