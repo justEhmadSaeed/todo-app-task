@@ -46,6 +46,7 @@ function App() {
 						placeholder='What will you do today?'
 						onChange={handleInput}
 						value={todoText}
+						autoFocus
 					/>
 					<input type='submit' id='add-todo-btn' value='ADD' />
 				</div>
